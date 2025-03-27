@@ -3,6 +3,10 @@ import { Tab } from './tab';
 import DocumentScanner from './tab-contents/document-scanner';
 import { TabsEnum } from '../../lib/tabs';
 import SignStamp from './tab-contents/sign-stamp';
+import BadgeScanning from './tab-contents/batch-scanning';
+import { AnimatePresence } from 'framer-motion';
+import AdvancedFilters from './tab-contents/advanced-filters';
+import ExportShare from './tab-contents/export-share';
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState(TabsEnum.DOCUMENT_SCANNER);
@@ -19,8 +23,8 @@ export default function Tabs() {
       icon: '/assets/tab-icons/sign-stamp.svg',
     },
     {
-      id: TabsEnum.BATCH_PROCESSING,
-      label: 'Batch Processing',
+      id: TabsEnum.BATCH_SCANNING,
+      label: 'Batch Scanning',
       icon: '/assets/tab-icons/batch.svg',
     },
     {
@@ -37,8 +41,21 @@ export default function Tabs() {
 
   return (
     <div>
-      {activeTab === TabsEnum.DOCUMENT_SCANNER && <DocumentScanner />}
-      {activeTab === TabsEnum.SIGN_STAMP && <SignStamp />}
+      <AnimatePresence mode="wait">
+        {activeTab === TabsEnum.DOCUMENT_SCANNER && (
+          <DocumentScanner key="document-scanner" />
+        )}
+        {activeTab === TabsEnum.SIGN_STAMP && <SignStamp key="sign-stamp" />}
+        {activeTab === TabsEnum.BATCH_SCANNING && (
+          <BadgeScanning key="batch-scanning" />
+        )}
+        {activeTab === TabsEnum.ADVANCED_FILTERS && (
+          <AdvancedFilters key="advanced-filters" />
+        )}
+        {activeTab === TabsEnum.EXPORT_SHARE && (
+          <ExportShare key="export-share" />
+        )}
+      </AnimatePresence>
       <div className="grid grid-cols-5 z-10">
         {tabs.map((tab, index) => (
           <Tab
