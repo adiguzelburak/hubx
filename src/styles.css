@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+  src: url('/assets/fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url('./assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+  src: url('/assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url('./assets/fonts/SFPRODISPLAYBLACKITALIC.OTF') format('opentype');
+  src: url('/assets/fonts/SFPRODISPLAYBLACKITALIC.OTF') format('opentype');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url('./assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
+  src: url('/assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
   font-weight: 800;
   font-style: italic;
   font-display: swap;
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url('./assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF') format('opentype');
+  src: url('/assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF') format('opentype');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url('./assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('opentype');
+  src: url('/assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('opentype');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -58,7 +58,7 @@
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url('./assets/fonts/SFPRODISPLAYTHINITALIC.OTF') format('opentype');
+  src: url('/assets/fonts/SFPRODISPLAYTHINITALIC.OTF') format('opentype');
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -66,7 +66,7 @@
 
 @font-face {
   font-family: 'SF Pro Display';
-  src: url('./assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF') format('opentype');
+  src: url('/assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF') format('opentype');
   font-weight: 200;
   font-style: italic;
   font-display: swap;
