@@ -25,8 +25,8 @@ export default function AdvancedFilters() {
               <motion.img
                 src="/assets/tab-images/advanced-filters-1.svg"
                 alt="Signature"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{
                   delay: 0.8,
                   duration: 0.5,
@@ -44,8 +44,8 @@ export default function AdvancedFilters() {
               <motion.img
                 src="/assets/tab-images/advanced-filters-2.svg"
                 alt="Badge"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{
                   delay: 0.9,
                   duration: 0.5,

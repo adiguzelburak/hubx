@@ -48,7 +48,7 @@ export const Tab = ({ isActive, onClick, icon, label, index }: TabProps) => {
             }}
             transition={{
               duration: 0.5,
-              ease: 'linear',
+              ease: 'easeIn',
             }}
             style={{
               transformOrigin: 'center',
