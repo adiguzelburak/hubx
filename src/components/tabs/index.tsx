@@ -1,6 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import { FreeMode, Grid } from 'swiper/modules';
+import { Grid } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper/types';
 import { TabsEnum } from '../../lib/tabs';
@@ -16,7 +16,6 @@ export default function Tabs() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSlideChange = (swiper: SwiperType) => {
-    console.log(swiper);
     setActiveIndex(swiper.activeIndex);
   };
 
@@ -49,7 +48,7 @@ export default function Tabs() {
   ];
 
   return (
-    <div>
+    <div className="z-50">
       <AnimatePresence mode="wait">
         {activeTab === TabsEnum.DOCUMENT_SCANNER && (
           <DocumentScanner key="document-scanner" />
@@ -65,17 +64,13 @@ export default function Tabs() {
           <ExportShare key="export-share" />
         )}
       </AnimatePresence>
-      <div className="lg:hidden block h-[120px]">
+      <div className="lg:hidden block h-[120px] -mt-[15px] lg:mt-[0px]">
         <Swiper
           slidesPerView={1.25}
           centeredSlides={!(activeIndex === 0 || activeIndex === 4)}
           onSlideChange={handleSlideChange}
           spaceBetween={0}
-          freeMode={true}
-          // pagination={{
-          //   clickable: true,
-          // }}
-          modules={[Grid, FreeMode]}
+          modules={[Grid]}
           className="mySwiper"
         >
           {tabs.map((tab, index) => (

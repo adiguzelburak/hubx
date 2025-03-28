@@ -9,12 +9,12 @@ export default function AdvancedFilters() {
         title="Unique Filters"
         description="Apply advanced filters and enhance quality with various custom made filters. Manually edit brightness and contrast by your own choice on the custom filters."
         phoneImage={
-          <div className="relative w-full h-full overflow-y-hidden">
+          <div className="relative w-full h-full lg:overflow-y-hidden">
             <motion.div
               initial={{ y: 600 }}
               animate={{ y: 65 }}
               transition={{ duration: 0.8, ease: 'linear' }}
-              className="absolute w-full h-full flex justify-center items-center z-10"
+              className="absolute w-full h-full flex justify-center items-center z-0"
             >
               <img
                 src="/assets/tab-images/sign-stamp.svg"
@@ -32,11 +32,8 @@ export default function AdvancedFilters() {
                   duration: 0.5,
                   ease: 'easeOut',
                 }}
+                className="left-[-17px] lg:left-[92px] bottom-[18%] lg:bottom-[12%] absolute max-w-[12.5%] lg:max-w-[40%]"
                 style={{
-                  position: 'absolute',
-                  left: '92px',
-                  bottom: '12%',
-                  maxWidth: '40%',
                   transformOrigin: 'center',
                   background: 'rgba(0, 0, 0, 0.364909)',
                   backdropFilter: 'blur(16.9431px)',
@@ -54,12 +51,8 @@ export default function AdvancedFilters() {
                   duration: 0.5,
                   ease: 'easeOut',
                 }}
+                className="right-[-18px] lg:right-[92px] bottom-[18%] lg:bottom-[12%] absolute max-w-[12.5%] lg:max-w-[40%]"
                 style={{
-                  position: 'absolute',
-                  opacity: 1,
-                  right: '96px',
-                  bottom: '12%',
-                  maxWidth: '40%',
                   transformOrigin: 'center',
                   background: 'rgba(0, 0, 0, 0.364909)',
                   backdropFilter: 'blur(16.9431px)',

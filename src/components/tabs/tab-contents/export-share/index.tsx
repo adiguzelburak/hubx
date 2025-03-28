@@ -9,12 +9,12 @@ export default function ExportShare() {
         title="All-Round Conversion"
         description="Export your scans as PDF,JPG,ZIP,TXT and Word."
         phoneImage={
-          <div className="relative w-full h-full overflow-y-hidden">
+          <div className="relative w-full h-full lg:overflow-y-hidden">
             <motion.div
               initial={{ y: 600 }}
               animate={{ y: 65 }}
               transition={{ duration: 0.8, ease: 'linear' }}
-              className="absolute w-full h-full flex justify-center items-center z-10"
+              className="absolute w-full h-full flex justify-center items-center z-0"
             >
               <div className="relative">
                 <img
@@ -33,12 +33,9 @@ export default function ExportShare() {
                   duration: 0.5,
                   ease: 'easeOut',
                 }}
+                className="bottom-0 left-[-46%] lg:left-0 absolute max-w-[8%] lg:max-w-[20%]"
                 style={{
-                  position: 'absolute',
-                  maxWidth: '20%',
                   zIndex: 14,
-                  bottom: '0%',
-                  left: '0%',
                 }}
               />
               <motion.img
@@ -51,11 +48,9 @@ export default function ExportShare() {
                   duration: 0.5,
                   ease: 'easeOut',
                 }}
+                className="bottom-[4%] left-[26%] lg:bottom-[-6%] lg:left-[28%] absolute max-w-[41%] lg:max-w-[100%]"
                 style={{
-                  position: 'absolute',
                   zIndex: 11,
-                  bottom: '-6%',
-                  left: '28%',
                 }}
               />
 
@@ -69,11 +64,9 @@ export default function ExportShare() {
                   duration: 0.5,
                   ease: 'easeOut',
                 }}
+                className="lg:bottom-[5.5%] lg:left-[43.2%] absolute bottom-[15.5%] left-[43.2%] max-w-[36%] lg:max-w-[100%]"
                 style={{
-                  position: 'absolute',
                   zIndex: 12,
-                  bottom: '5.5%',
-                  left: '43.2%',
                 }}
               />
 
@@ -87,11 +80,9 @@ export default function ExportShare() {
                   duration: 0.5,
                   ease: 'easeOut',
                 }}
+                className="right-[4.5%] bottom-[9%] lg:right-[19.5%] lg:bottom-[-2%] absolute max-w-[42%] lg:max-w-[100%]"
                 style={{
-                  position: 'absolute',
                   zIndex: 13,
-                  bottom: '-2%',
-                  right: '19.5%',
                 }}
               />
             </motion.div>

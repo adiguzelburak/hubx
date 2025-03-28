@@ -14,7 +14,7 @@ export default function DocumentScanner() {
               initial={{ y: 600 }}
               animate={{ y: 65 }}
               transition={{ duration: 0.8, ease: 'linear' }}
-              className="absolute w-full h-full flex justify-center items-center z-10"
+              className="absolute w-full h-full flex justify-center items-center z-0"
             >
               <img
                 src="/assets/tab-images/document-scanner.svg"

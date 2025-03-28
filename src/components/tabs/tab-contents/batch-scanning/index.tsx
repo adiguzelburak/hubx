@@ -9,7 +9,7 @@ export default function BadgeScanning() {
         title="Multiple Page Scan"
         description="Scan multiple pages or documents in multiple-scanning mode. Batch all scans as a single document."
         phoneImage={
-          <div className="relative w-full h-full overflow-y-hidden">
+          <div className="relative w-full h-full overflow-hidden">
             <motion.div
               initial={{ y: 600 }}
               animate={{ y: 65 }}
@@ -21,6 +21,7 @@ export default function BadgeScanning() {
                   src="/assets/tab-images/batch-scanning.svg"
                   alt="Batch Scanning"
                   style={{ maxWidth: '100%', maxHeight: '100%' }}
+                  className="mt-3"
                 />
 
                 <motion.img
@@ -33,12 +34,9 @@ export default function BadgeScanning() {
                     duration: 0.5,
                     ease: 'easeOut',
                   }}
+                  className="left-[15%] lg:left-[15%] top-[28%] lg:top-[25%] absolute max-w-[70%] lg:max-w-[100%]"
                   style={{
-                    position: 'absolute',
-                    top: '25%',
-                    left: '15%',
                     transform: 'translateX(-50%)',
-                    maxWidth: '100%',
                     zIndex: 11,
                   }}
                 />
@@ -53,12 +51,9 @@ export default function BadgeScanning() {
                     duration: 0.5,
                     ease: 'easeOut',
                   }}
+                  className="left-[15%] lg:left-[15%] top-[36%] lg:top-[32%] absolute max-w-[70%] lg:max-w-[100%]"
                   style={{
-                    position: 'absolute',
-                    top: '32%',
-                    left: '15%',
                     transform: 'translateX(-50%)',
-                    maxWidth: '80%',
                     zIndex: 12,
                   }}
                 />
@@ -73,12 +68,9 @@ export default function BadgeScanning() {
                     duration: 0.5,
                     ease: 'easeOut',
                   }}
+                  className="left-[15%] lg:left-[15%] top-[44%] lg:top-[39%] absolute max-w-[70%] lg:max-w-[100%]"
                   style={{
-                    position: 'absolute',
-                    top: '39%',
-                    left: '15%',
                     transform: 'translateX(-50%)',
-                    maxWidth: '80%',
                     zIndex: 13,
                   }}
                 />
