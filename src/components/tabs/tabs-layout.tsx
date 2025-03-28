@@ -14,7 +14,7 @@ export default function TabsLayout({
   phoneImage,
 }: LayoutProps) {
   return (
-    <div className="lg:h-[610px] mt-14 lg:mt-0 bg-white w-full flex  items-center flex-col-reverse lg:flex-row">
+    <div className="h-[587px] lg:h-[610px] mt-14 lg:mt-0 bg-white w-full flex  items-center flex-col-reverse lg:flex-row">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -1,15 +1,24 @@
-import { useState } from 'react';
-import { Tab } from './tab';
-import DocumentScanner from './tab-contents/document-scanner';
-import { TabsEnum } from '../../lib/tabs';
-import SignStamp from './tab-contents/sign-stamp';
-import BadgeScanning from './tab-contents/batch-scanning';
 import { AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { FreeMode, Grid } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperType } from 'swiper/types';
+import { TabsEnum } from '../../lib/tabs';
+import { Tab } from './tab';
 import AdvancedFilters from './tab-contents/advanced-filters';
+import BadgeScanning from './tab-contents/batch-scanning';
+import DocumentScanner from './tab-contents/document-scanner';
 import ExportShare from './tab-contents/export-share';
+import SignStamp from './tab-contents/sign-stamp';
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState(TabsEnum.DOCUMENT_SCANNER);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideChange = (swiper: SwiperType) => {
+    console.log(swiper);
+    setActiveIndex(swiper.activeIndex);
+  };
 
   const tabs = [
     {
@@ -56,7 +65,33 @@ export default function Tabs() {
           <ExportShare key="export-share" />
         )}
       </AnimatePresence>
-      <div className="grid grid-cols-5 z-10">
+      <div className="lg:hidden block h-[120px]">
+        <Swiper
+          slidesPerView={1.25}
+          centeredSlides={!(activeIndex === 0 || activeIndex === 4)}
+          onSlideChange={handleSlideChange}
+          spaceBetween={0}
+          freeMode={true}
+          // pagination={{
+          //   clickable: true,
+          // }}
+          modules={[Grid, FreeMode]}
+          className="mySwiper"
+        >
+          {tabs.map((tab, index) => (
+            <SwiperSlide key={tab.id}>
+              <Tab
+                index={index}
+                label={tab.label}
+                isActive={activeTab === tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                icon={tab.icon}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="hidden lg:grid grid-cols-5 z-10">
         {tabs.map((tab, index) => (
           <Tab
             index={index}

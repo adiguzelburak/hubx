@@ -58,7 +58,9 @@ export const Tab = ({ isActive, onClick, icon, label, index }: TabProps) => {
         </svg>
       </button>
 
-      <div className="text-[#0B172A] leading-6 font-medium">{label}</div>
+      <div className="text-[#0B172A] leading-7 lg:leading-6 font-medium text-[20px] lg:text-base">
+        {label}
+      </div>
     </div>
   );
 };
