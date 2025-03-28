@@ -14,17 +14,17 @@ export default function TabsLayout({
   phoneImage,
 }: LayoutProps) {
   return (
-    <div className="h-[610px] bg-white w-full grid grid-cols-2 items-center">
+    <div className="lg:h-[610px] mt-14 lg:mt-0 bg-white w-full flex  items-center flex-col-reverse lg:flex-row">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
-        className="ml-16 w-[610px] h-[610px] "
+        className="lg:ml-16 w-[230px] h-[466px] lg:w-[610px] lg:h-[610px] -mt-28 lg:-mt-0"
       >
         {phoneImage}
       </motion.div>
-      <div className="max-h-[260px] w-[556px] flex flex-col text-end justify-end items-end">
+      <div className="max-h-[260px] w-full lg:w-[556px] flex flex-col text-center items-center justify-center lg:text-end lg:justify-end lg:items-end px-6 lg:px-0">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -48,7 +48,7 @@ export default function TabsLayout({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="text-[#0B122A] font-normal text-[20px] leading-8 tracking-[0.8px] mb-5"
+          className="text-[#0B122A] tracking-[0px] text-sm lg:text-[20px] leading-6 lg:leading-8 lg:tracking-[0.8px] mb-5"
         >
           {description}
         </motion.p>
