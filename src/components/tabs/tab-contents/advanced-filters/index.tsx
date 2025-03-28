@@ -34,7 +34,7 @@ export default function AdvancedFilters() {
                 }}
                 style={{
                   position: 'absolute',
-                  left: '90px',
+                  left: '92px',
                   bottom: '12%',
                   maxWidth: '40%',
                   transformOrigin: 'center',
@@ -57,7 +57,7 @@ export default function AdvancedFilters() {
                 style={{
                   position: 'absolute',
                   opacity: 1,
-                  right: '90px',
+                  right: '96px',
                   bottom: '12%',
                   maxWidth: '40%',
                   transformOrigin: 'center',

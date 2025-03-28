@@ -23,7 +23,7 @@ export const Tab = ({ isActive, onClick, icon, label, index }: TabProps) => {
       onClick={onClick}
     >
       <button
-        className={`relative z-10 flex h-14 w-14 items-center justify-center mr-4 rounded-full ${
+        className={`*:!cursor-pointer relative z-10 flex h-14 w-14 items-center justify-center mr-4 rounded-full ${
           isActive ? 'text-blue-500' : 'text-gray-500'
         }`}
       >

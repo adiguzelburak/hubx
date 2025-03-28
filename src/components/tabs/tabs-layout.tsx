@@ -14,13 +14,13 @@ export default function TabsLayout({
   phoneImage,
 }: LayoutProps) {
   return (
-    <div className="h-[610px] bg-red-50 w-full grid grid-cols-2 items-center">
+    <div className="h-[610px] bg-white w-full grid grid-cols-2 items-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
-        className="w-[610px] h-[610px]"
+        className="ml-16 w-[610px] h-[610px] "
       >
         {phoneImage}
       </motion.div>
