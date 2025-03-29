@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import TabsLayout from '../../tabs-layout';
+import TabsLayout from '../../../../../components/tabs/tabs-layout';
 
 export default function DocumentScanner() {
   return (

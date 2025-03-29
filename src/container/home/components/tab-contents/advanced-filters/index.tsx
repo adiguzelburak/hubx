@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import TabsLayout from '../../tabs-layout';
+import TabsLayout from '../../../../../components/tabs/tabs-layout';
 
-export default function SignStamp() {
+export default function AdvancedFilters() {
   return (
     <div>
       <TabsLayout
-        tab="Sign & Stamp"
-        title="One-Tap Focus"
-        description="Draw, scan or import your signature and stamp with a simple touch. Sign and stamp any document with just a single tap!"
+        tab="Advanced Filters"
+        title="Unique Filters"
+        description="Apply advanced filters and enhance quality with various custom made filters. Manually edit brightness and contrast by your own choice on the custom filters."
         phoneImage={
           <div className="relative w-full h-full lg:overflow-y-hidden">
             <motion.div
@@ -23,34 +23,40 @@ export default function SignStamp() {
               />
 
               <motion.img
-                src="/assets/tab-images/sign-stamp-signature.svg"
+                src="/assets/tab-images/advanced-filters-1.svg"
                 alt="Signature"
-                className="left-[-64px] lg:left-[10px] bottom-[27%] lg:bottom-[24%] absolute max-w-[62%] lg:max-w-[40%]"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{
                   delay: 0.8,
                   duration: 0.5,
                   ease: 'easeOut',
                 }}
+                className="left-[-17px] lg:left-[92px] bottom-[18%] lg:bottom-[12%] absolute max-w-[12.5%] lg:max-w-[40%]"
                 style={{
                   transformOrigin: 'center',
+                  background: 'rgba(0, 0, 0, 0.364909)',
+                  backdropFilter: 'blur(16.9431px)',
+                  borderRadius: '12.466px',
                 }}
               />
 
               <motion.img
-                src="/assets/tab-images/sign-stamp-badge.svg"
+                src="/assets/tab-images/advanced-filters-2.svg"
                 alt="Badge"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                className="right-[-52px] lg:right-[10px] bottom-[38%] lg:bottom-[37%] absolute max-w-[62%] lg:max-w-[40%]"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{
-                  delay: 1,
+                  delay: 0.9,
                   duration: 0.5,
                   ease: 'easeOut',
                 }}
+                className="right-[-18px] lg:right-[92px] bottom-[18%] lg:bottom-[12%] absolute max-w-[12.5%] lg:max-w-[40%]"
                 style={{
                   transformOrigin: 'center',
+                  background: 'rgba(0, 0, 0, 0.364909)',
+                  backdropFilter: 'blur(16.9431px)',
+                  borderRadius: '12.466px',
                 }}
               />
             </motion.div>

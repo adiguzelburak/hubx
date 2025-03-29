@@ -4,14 +4,14 @@ import { Grid } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper/types';
 import { TabsEnum } from '../../lib/tabs';
-import { Tab } from './tab';
-import AdvancedFilters from './tab-contents/advanced-filters';
-import BadgeScanning from './tab-contents/batch-scanning';
-import DocumentScanner from './tab-contents/document-scanner';
-import ExportShare from './tab-contents/export-share';
-import SignStamp from './tab-contents/sign-stamp';
+import { Tab } from '../../components/tabs/tab';
+import AdvancedFilters from './components/tab-contents/advanced-filters';
+import BadgeScanning from './components/tab-contents/batch-scanning';
+import DocumentScanner from './components/tab-contents/document-scanner';
+import ExportShare from './components/tab-contents/export-share';
+import SignStamp from './components/tab-contents/sign-stamp';
 
-export default function Tabs() {
+export default function Home() {
   const [activeTab, setActiveTab] = useState(TabsEnum.DOCUMENT_SCANNER);
   const [activeIndex, setActiveIndex] = useState(0);
 

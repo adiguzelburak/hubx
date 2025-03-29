@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { COLORS } from '../../lib/colors';
 
 interface IconProps {
@@ -10,21 +9,17 @@ interface IconProps {
 export const Icon = ({ src, isActive }: IconProps) => {
   const [svgContent, setSvgContent] = useState<string>('');
 
-  useEffect(() => {
-    const fetchSvg = async () => {
-      try {
-        const response = await fetch(src);
-        const svgText = await response.text();
-        setSvgContent(svgText);
-      } catch (error) {
-        console.error('Error loading SVG:', error);
-      }
-    };
-
-    if (src) {
-      void fetchSvg();
-    }
+  const fetchSvg = useCallback(async () => {
+    const response = await fetch(src);
+    const svgText = await response.text();
+    setSvgContent(svgText);
   }, [src]);
+
+  useEffect(() => {
+    if (src) {
+      fetchSvg().catch((error) => console.error('Error loading SVG:', error));
+    }
+  }, [src, fetchSvg]);
 
   const coloredSvgContent = svgContent.replace(
     /fill="[^"]*"/g,
