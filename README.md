@@ -39,12 +39,14 @@ https://drive.google.com/drive/folders/1kkicvHG7UMc-MY9npv_fy4gW1cZF3QiO?usp=dri
 ### Installation
 
 1. Clone the repository
+
 ```sh
 git clone <repository-url>
 cd frontend-assignment
 ```
 
 2. Install dependencies
+
 ```sh
 npm install
 # or
@@ -64,7 +66,6 @@ npm run dev
 ```sh
 npm run build
 ```
-
 
 ### Format the code
 

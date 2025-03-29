@@ -64,7 +64,7 @@ export default function Home() {
           <ExportShare key="export-share" />
         )}
       </AnimatePresence>
-      <div className="lg:hidden block h-[120px] -mt-[15px] lg:mt-[0px]">
+      <div className="lg:hidden block h-[120px] lg:mt-[0px]">
         <Swiper
           slidesPerView={1.25}
           centeredSlides={!(activeIndex === 0 || activeIndex === 4)}

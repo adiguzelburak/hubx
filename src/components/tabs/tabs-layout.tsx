@@ -20,7 +20,7 @@ export default function TabsLayout({
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
-        className="lg:ml-16 w-[230px] h-[466px] lg:w-[610px] lg:h-[610px] -mt-28 lg:-mt-0"
+        className="lg:ml-16 w-full h-full lg:w-[610px] lg:h-[610px] -mt-28 lg:-mt-0"
       >
         {phoneImage}
       </motion.div>

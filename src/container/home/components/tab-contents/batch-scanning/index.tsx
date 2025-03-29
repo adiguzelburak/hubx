@@ -20,8 +20,7 @@ export default function BadgeScanning() {
                 <img
                   src="/assets/tab-images/batch-scanning.svg"
                   alt="Batch Scanning"
-                  style={{ maxWidth: '100%', maxHeight: '100%' }}
-                  className="mt-3"
+                  className="w-[250px] h-[508px] lg:w-[374px] lg:h-[760px]"
                 />
 
                 <motion.img
@@ -34,7 +33,7 @@ export default function BadgeScanning() {
                     duration: 0.5,
                     ease: 'easeOut',
                   }}
-                  className="left-[15%] lg:left-[15%] top-[28%] lg:top-[25%] absolute max-w-[70%] lg:max-w-[100%]"
+                  className="left-[17%] lg:left-[15%] top-[35%] lg:top-[35%] absolute max-w-[165px] lg:max-w-[246px]"
                   style={{
                     transform: 'translateX(-50%)',
                     zIndex: 11,
@@ -51,7 +50,7 @@ export default function BadgeScanning() {
                     duration: 0.5,
                     ease: 'easeOut',
                   }}
-                  className="left-[15%] lg:left-[15%] top-[36%] lg:top-[32%] absolute max-w-[70%] lg:max-w-[100%]"
+                  className="left-[14%] lg:left-[15%] top-[40%] lg:top-[40%] absolute max-w-[182px] lg:max-w-[273px]"
                   style={{
                     transform: 'translateX(-50%)',
                     zIndex: 12,
@@ -68,7 +67,7 @@ export default function BadgeScanning() {
                     duration: 0.5,
                     ease: 'easeOut',
                   }}
-                  className="left-[15%] lg:left-[15%] top-[44%] lg:top-[39%] absolute max-w-[70%] lg:max-w-[100%]"
+                  className="left-[12%] lg:left-[15%] top-[45%] lg:top-[45%] absolute max-w-[193px] lg:max-w-[290px]"
                   style={{
                     transform: 'translateX(-50%)',
                     zIndex: 13,
