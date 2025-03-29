@@ -41,7 +41,7 @@ https://drive.google.com/drive/folders/1kkicvHG7UMc-MY9npv_fy4gW1cZF3QiO?usp=dri
 1. Clone the repository
 
 ```sh
-git clone <repository-url>
+git clone https://github.com/adiguzelburak/hubx.git
 cd frontend-assignment
 ```
 
