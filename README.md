@@ -5,7 +5,7 @@ Please implement the given design with responsive, mobile-first approach and cro
 ## 🔗 Live Preview
 
 Check out the live demo of the project:
-[HubX Frontend Assignment Demo](https://hubx-assetment.vercel.app/)
+[HubX Frontend Assignment Demo](https://hubx-pi.vercel.app/)
 
 ## 🎨 Design
 
